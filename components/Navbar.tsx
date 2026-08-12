@@ -372,7 +372,7 @@ export default function Navbar() {
                   "
                 >
                   <Image
-                    src="/images/logo/ale-logo.png"
+                    src="/images/logo/ale-logo-putih.png"
                     alt="ALE Logo"
                     width={120}
                     height={120}
