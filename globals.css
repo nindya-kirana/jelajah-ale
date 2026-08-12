@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --ale-green: #24382b;
+  --ale-dark: #0c1711;
+  --ale-cream: #f4f1e8;
+  --ale-beige: #d8cdb9;
+  --ale-brown: #8b7355;
+  --ale-muted: #536052;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ale-cream);
+  color: var(--ale-green);
+  font-family: var(--font-manrope), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--ale-green);
+  color: var(--ale-cream);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+.font-editorial {
+  font-family: var(--font-cormorant), serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ale-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 241, 232, 0.25);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 241, 232, 0.5);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+img {
+  max-width: 100%;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
