@@ -35,7 +35,7 @@ export default function Footer() {
               className="group inline-flex flex-col items-center leading-none"
             >
               <Image
-                src="/images/logo/ale-logo.png"
+                src="/images/logo/ale-logo-putih.png"
                 alt="ALE Logo"
                 width={120}
                 height={120}
