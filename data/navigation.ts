@@ -5,6 +5,11 @@ export const navigation = [
     id: "about",
   },
   {
+    id: "logo-philosophy",
+    label: "Logo Philosophy",
+    href: "/logo-philosophy",
+  },
+  {
     label: "Experiences",
     href: "/experiences",
     id: "experiences",

@@ -6,6 +6,7 @@ import FoodDrinksPreview from "@/components/FoodDrinksPreview";
 import StoriesPreview from "@/components/StoriesPreview";
 import GalleryPreview from "@/components/GalleryPreview";
 import VisitSection from "@/components/VisitSection";
+import LogoPhilosophyPreview from "@/components/LogoPhilosophyPreview";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <section id="about">
         <AboutPreview />
       </section>
-
+      <LogoPhilosophyPreview />
       <section id="experiences">
         <ExperiencePreview />
       </section>
